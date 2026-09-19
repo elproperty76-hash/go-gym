@@ -1,0 +1,6 @@
+{
+  "name": "Go Gym",
+  "description": "Aplikasi manajemen gym praktis untuk pendaftaran member, pemilihan kelas, dan pemantauan jadwal latihan harian.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

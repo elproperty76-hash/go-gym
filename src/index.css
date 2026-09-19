@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+.font-military {
+  font-family: 'Black Ops One', sans-serif;
+  letter-spacing: 0.08em;
+  text-shadow: 
+    1px 1px 0px #10b981,
+    2px 2px 0px #047857,
+    3px 3px 0px #065f46,
+    4px 4px 0px #022c22,
+    5px 5px 8px rgba(0, 0, 0, 0.9);
+}

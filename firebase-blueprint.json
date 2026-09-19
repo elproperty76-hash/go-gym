@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "entities": {
+    "members": {
+      "title": "Member",
+      "description": "Registered gym members and users",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "fullName": { "type": "string" },
+        "email": { "type": "string" },
+        "phone": { "type": "string" },
+        "password": { "type": "string" },
+        "membershipType": { "type": "string" },
+        "status": { "type": "string" },
+        "joinedDate": { "type": "string" },
+        "remainingSessions": { "type": "number" },
+        "fitnessGoals": { "type": "string" },
+        "height": { "type": "number" },
+        "weight": { "type": "number" },
+        "authUid": { "type": "string" }
+      },
+      "required": ["fullName"]
+    },
+    "bookings": {
+      "title": "Booking",
+      "description": "Class bookings",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "memberId": { "type": "string" },
+        "classId": { "type": "string" },
+        "className": { "type": "string" },
+        "instructorName": { "type": "string" },
+        "date": { "type": "string" },
+        "time": { "type": "string" },
+        "status": { "type": "string" }
+      },
+      "required": ["memberId", "className"]
+    },
+    "sessions": {
+      "title": "WorkoutSession",
+      "description": "Workout sessions",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "memberId": { "type": "string" },
+        "date": { "type": "string" },
+        "activity": { "type": "string" },
+        "durationMinutes": { "type": "number" },
+        "caloriesBurned": { "type": "number" },
+        "notes": { "type": "string" }
+      },
+      "required": ["memberId", "activity"]
+    }
+  }
+}
